@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerNetwork
   ShowTopMostFoldoutHeaderGroup: 1
+  spawnedObjectPrefab: {fileID: 1400231775009122598, guid: 8c768a66e521e5246b68dbf3bc638ca9, type: 3}
 --- !u!114 &6311454687598943859
 MonoBehaviour:
   m_ObjectHideFlags: 0
