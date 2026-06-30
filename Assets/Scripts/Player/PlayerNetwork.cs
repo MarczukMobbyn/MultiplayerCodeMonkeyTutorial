@@ -8,6 +8,8 @@ public class PlayerNetwork : NetworkBehaviour
 {
     [SerializeField] Transform spawnedObjectPrefab;
 
+    private Transform spawnedObjectTransform;
+
     private NetworkVariable<MyCustomData> randomNumber = new NetworkVariable<MyCustomData>(new MyCustomData
     {
         id = 56,
@@ -43,7 +45,7 @@ public class PlayerNetwork : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            Transform spawnedObjectTransform = Instantiate(spawnedObjectPrefab);
+            spawnedObjectTransform = Instantiate(spawnedObjectPrefab);
             spawnedObjectTransform.GetComponent<NetworkObject>().Spawn(true);
 
             //TestClientRpc(new ClientRpcParams { Send = new ClientRpcSendParams { TargetClientIds = new List<ulong> { 1 } } });
@@ -54,6 +56,11 @@ public class PlayerNetwork : NetworkBehaviour
             //    _bool = Random.Range(0, 2) == 0 ? true : false,
             //    message = "gay boom"
             //};
+        }
+
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            spawnedObjectTransform.GetComponent<NetworkObject>().Despawn(true);
         }
 
         Vector3 moveDir = new Vector3(0, 0, 0);

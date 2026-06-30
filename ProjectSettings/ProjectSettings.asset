@@ -82,7 +82,7 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -930,7 +930,7 @@ PlayerSettings:
   cloudProjectId: 23b1b4ca-eb0c-4626-9c31-3e803c4650f8
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2026-06-20_20-41-41
+  projectName: CodeMonkeyTutorial
   organizationId: szymek-marczuk-wp-pl
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
